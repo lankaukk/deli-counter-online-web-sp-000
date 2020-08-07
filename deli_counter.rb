@@ -3,10 +3,8 @@ def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
   elsif katz_deli.size != 0 
-    counter = 1
-    katz_deli.each do |customer|
-      puts "The line is currently: #{counter}. #{customer}"
-    counter += 1
+    katz_deli.each_with_index.map do |customer, index|
+      puts "The line is currently: #{index+1}. #{customer}"
     end
   end
 end
