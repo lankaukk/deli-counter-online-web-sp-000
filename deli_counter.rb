@@ -14,8 +14,10 @@ end
 
 def take_a_number(katz_deli, name)
   counter = 1
-  puts "Welcome, #{name}. You are number #{counter} in line."
+  katz_deli.each do |person_in_line|
+  puts "Welcome, #{person_in_line}. You are number #{counter} in line."
   counter += 1
+end
 end
 
 
