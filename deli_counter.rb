@@ -7,6 +7,7 @@ def line(katz_deli)
     katz_deli.each_with_index.map do |customer, index|
       line << "#{index+1}. #{customer}"
     end
+    line
   end
 end
 
