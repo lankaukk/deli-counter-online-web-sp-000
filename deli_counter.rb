@@ -7,7 +7,7 @@ def line(katz_deli)
         katz_deli.each_with_index.map do |customer, index|
           line << "#{index+1}. #{customer}"
         end
-      return line.join(" ")
+      puts line.join(" ")
     end
 end
 
