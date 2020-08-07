@@ -13,9 +13,12 @@ end
 
 
 def take_a_number(katz_deli, name)
-  
-  katz_deli.each do |person_in_line|
-    puts "Welcome, #{person_in_line}. You are number #{katz_deli.size} in line."
+  if katz_deli.size == 0
+    katz_deli << name 
+  else
+    katz_deli.each do |person_in_line|
+      puts "Welcome, #{person_in_line}. You are number #{katz_deli.size} in line."
+    end
   end
 end
 
