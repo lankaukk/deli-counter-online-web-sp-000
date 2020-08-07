@@ -3,9 +3,9 @@ def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
   elsif katz_deli.size != 0 
-    line = []
+    line = ["The line is currently: "]
     katz_deli.each_with_index.map do |customer, index|
-      puts "The line is currently: #{index+1}. #{customer}"
+      line << "#{index+1}. #{customer}"
     end
   end
 end
