@@ -21,7 +21,7 @@ def take_a_number(katz_deli, name)
     katz_deli.each do |person_in_line|
       puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
     end
-  end
+  # end
 end
 
 
